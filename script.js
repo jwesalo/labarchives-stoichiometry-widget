@@ -48,17 +48,20 @@ my_widget_script =
         // json_data will contain the data to populate the form with, it will be in the form of the data
         // returned from a call to to_json or empty if this is a new form.
         //By default it calls the parent_class's init.
-
-		if (mode == "edit" || mode == "edit_dev") {
-			$(".widgetcredit").show();
-		} else {
-			$(".widgetcredit").hide();
-		}
+        
+    if (mode == "edit" || mode == "edit_dev") {
+      $(".widgetcredit").show();
+    } else {
+      $(".widgetcredit").hide();
+    }
 
         // Precision for floats
         var nFixed = 2;
 
         this.parent_class.init(mode, json_data);
+        
+        document.getElementById("initialfixed").checked = false
+
 
         moles1 = $('#the_form input[name=moles1]');
         fw1 = $('#the_form input[name=fw1]');
@@ -105,7 +108,12 @@ my_widget_script =
               my_widget_script.enable_all_records()
             } else if (ctx.fw.val() && ctx.amount.val() && ctx.moles.val()) {
               ctx.moles.val((ctx.amount.val() / ctx.fw.val()).toFixed(nFixed))
-              my_widget_script.update_all_records()
+              if (document.getElementById("initialfixed").checked) {
+                my_widget_script.update_all_records_equiv()
+              } else {
+                my_widget_script.update_all_records()
+              }
+              my_widget_script.enable_all_records()
             }
           } else {
             if (ctx.fw.val()) {
@@ -154,7 +162,12 @@ my_widget_script =
               my_widget_script.update_volume(ctx);
             } else if (ctx.fw.val() && ctx.amount.val() && ctx.moles.val()) {
               ctx.amount.val((ctx.moles.val() * ctx.fw.val()).toFixed(nFixed))
-              my_widget_script.update_all_records()
+              if (document.getElementById("initialfixed").checked) {
+                my_widget_script.update_all_records_equiv()
+              } else {
+                my_widget_script.update_all_records()
+              }
+              my_widget_script.enable_all_records()
               my_widget_script.update_volume(ctx);
             }
           } else {
@@ -287,5 +300,21 @@ my_widget_script =
           }
         })
       },
+
+      // Change all record equiv when amount or moles of first record is changed
+      update_all_records_equiv: function() {
+        $('#the_form tbody tr:not(.initialRow)').each(function() {
+          var ctx = my_widget_script.get_context(this);
+          if (ctx.fw.val() && ctx.equiv.val()) {
+            ctx.equiv.val((ctx.moles.val() / ctx.moles1.val()).toFixed(2))
+            my_widget_script.update_volume(ctx);
+          }
+        })
+      },
+
+
+      
+
+      // next.equiv = (next.amount/next.fw) / (first.amount/first.fw)
 
     }

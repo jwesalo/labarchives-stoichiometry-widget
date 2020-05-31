@@ -19,33 +19,41 @@ The following changes have been made from the original:
 
 Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from the original developed by the [Sydney Informatics Hub](https://informatics.sydney.edu.au) from an initial version by [Dr. Samuel Banister](https://sydney.edu.au/science/people/samuel.banister.php). This work was completed to build a customized widget for the Deiters Lab (http://deiterslab.org). 
 
-## Installation
+## How to use the widget in your notebook
 
-To install, you will need to copy the contents of [`widget.html`](widget.html) and [`script.js`](script.js) into the [Widget Manager](https://labarchives.kayako.com/Knowledgebase/Article/View/409/0/5031-the-widget-manager).
+To install, you will need to copy the contents from the raw versions of [`widget.html`](widget.html) and [`script.js`](script.js) into the [Widget Manager](https://labarchives.kayako.com/Knowledgebase/Article/View/409/0/5031-the-widget-manager).
 
 1. Go to the *Widget Manager*
+![Widget Manager](https://imgur.com/oRDvnoz)
 2. Under *Available Widgets* click *New*
 3. Enter the widget title: *Stoichiomeister* (or *Stoich Table*, or whatever you choose to call it for your notebooks)
 4. In the *Widget HTML Editor* tab, click the *Source* button on the toolbar.
 5. In a new browser window:
     1. Go to https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/widget.html
-    2. *Select All* (find this in the Edit menu)
-    3. *Copy* (find this in the edit menu)
-    4. Close that browser window.
+    2. *Select All*
+    3. *Copy*
 6. Back in your *Widget HTML Editor*: *Select All* and *Paste*.
+![HTML]
+(https://imgur.com/5Vv1Y6N)
 7. Change to the *Script Editor* tab.
 8. In a new browser window:
     1. Go to https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/script.js
-    2. *Select All* (find this in the Edit menu)
-    3. *Copy* (find this in the edit menu)
-    4. Close that browser window.
+    2. *Select All*
+    3. *Copy*
 9. Back in your *Script Editor*: *Select All* and *Paste*
+![JS]
+(https://imgur.com/cj6KLOi)
 10. Click the *Save Widget* button next to the Title entry box.
 
-## Use the Widget into your Notebook
+## Insert the widget into a page of your notebook
 
 Click to insert a widget (may be under the "More" menu).
+![insert]
+(https://imgur.com/KTkfwxC)
 Select the Widget you've created, and click "Use Stoich Table" or whatever you called it.
+![select]
+(https://imgur.com/ozghnaW)
+
 See https://labarchives.kayako.com/knowledgebase/article/View/408/286/501-what-are-widgets
 
 ## Expected Behaviour

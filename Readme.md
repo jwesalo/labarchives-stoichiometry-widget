@@ -21,7 +21,7 @@ Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from 
 
 ## How to use the widget in your notebook
 
-To install, you will need to copy the contents from the raw versions of [`widget.html`](widget.html) and [`script.js`](script.js) into the [Widget Manager](https://labarchives.kayako.com/Knowledgebase/Article/View/409/0/5031-the-widget-manager).
+To install, you will need to copy the contents from [`widget.html`](https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/widget.html) and [`script.js`](https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/script.js) into the [Widget Manager](https://labarchives.kayako.com/Knowledgebase/Article/View/409/0/5031-the-widget-manager).
 
 1. Go to the *Widget Manager*
 ![Widget Manager](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/Widget_manager.png)

@@ -9,7 +9,7 @@ To use the widget:
  1. Plan the reaction. Type the expected amount of the limiting reagent into row 1 (e.g., "100 mg" if you expect to do a reaction on that scale). FW and/or density values will allow it to calculate the moles automatically. Then, type in all of the other reagents, their stoichiometry (equiv.), and their FW/density, and the amount you need to add will be automatically calculated.
  2. When weighing out the reagents, input the actual amount used. For the limiting reagent in row 1, check the "Locked" box before changing so that the amounts of the reagents in the rows below will not change. When to box is checked, changing the amount in row 1 results in only the equiv. in the rows below changing.
  
- If desired, yield can be calculated by creating an additional row for the product, and typing in the amount and FW. % Yield can then be calculated as 100 x equiv.
+ If desired, yield can be calculated by creating an additional row for the product, and typing in the amount and FW. % Yield can then be calculated as 100 × equiv.
 
 The following changes have been made from the original:
  - Added a "locked" checkbox for the first row. When unchecked, changes to amount or volume in row 1 cause recalculation of amount, moles, equiv., and volume in the rows below. When checked, only equiv. will change in the rows below.

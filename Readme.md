@@ -1,11 +1,23 @@
 
-# LabArchives eNotebook Stoichiometry Table Widget
+# LabArchives "Stoichmeister" Stoichiometry Table Widget
 
-This widget helps the researcher calculate and document amounts used in reactions for stoichiometry.
+This widget calculates and documents amounts, moles, volumes, and stoichiometric equivalents for chemical reactions.
 
-The widget can be added to a LabArchive Notebook page.
+The widget can be added to a LabArchives Notebook page.
 
-It was developed by the [Sydney Informatics Hub](https://informatics.sydney.edu.au) from an initial version by [Dr. Samuel Banister](https://sydney.edu.au/science/people/samuel.banister.php).
+To use the widget:
+ 1. Plan the reaction. Type the expected amount of the limiting reagent into row 1 (e.g., "100 mg" if you expect to do a reaction on that scale). FW and/or density values will allow it to calculate the moles automatically. Then, type in all of the other reagents, their stoichiometry (equiv.), and their FW/density, and the amount you need to add will be automatically calculated.
+ 2. When weighing out the reagents, input the actual amount used. For the limiting reagent in row 1, check the "Locked" box before changing so that the amounts of the reagents in the rows below will not change. When to box is checked, changing the amount in row 1 results in only the equiv. in the rows below changing.
+ 
+ If desired, yield can be calculated by creating an additional row for the product, and typing in the amount and FW. % Yield can then be calculated as 100 x equiv.
+
+The following changes have been made from the original:
+ - Added a "locked" checkbox for the first row. When unchecked, changes to amount or volume in row 1 cause recalculation of amount, moles, equiv., and volume in the rows below. When checked, only equiv. will change in the rows below.
+ - Changed fonts
+ - Adjusted column widths (main goal was to ensure that the equiv. column shows 2 decimal places for % yield calculations and for catalysts) 
+ - Increased maximum length of substance names to 120 characters.
+
+Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from the original developed by the [Sydney Informatics Hub](https://informatics.sydney.edu.au) from an initial version by [Dr. Samuel Banister](https://sydney.edu.au/science/people/samuel.banister.php). This work was completed to build a customized widget for the Deiters Lab (http://deiterslab.org). 
 
 ## Installation
 
@@ -13,25 +25,27 @@ To install, you will need to copy the contents of [`widget.html`](widget.html) a
 
 1. Go to the *Widget Manager*
 2. Under *Available Widgets* click *New*
-3. Enter the widget title: *Stoichiometry Table* (or whatever you choose to call it for your notebooks)
+3. Enter the widget title: *Stoichiomeister* (or *Stoich Table*, or whatever you choose to call it for your notebooks)
 4. In the *Widget HTML Editor* tab, click the *Source* button on the toolbar.
 5. In a new browser window:
-    1. Go to https://github.com/Sydney-Informatics-Hub/labarchives-stoichiometry-widget/raw/master/widget.html
+    1. Go to https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/widget.html
     2. *Select All* (find this in the Edit menu)
     3. *Copy* (find this in the edit menu)
     4. Close that browser window.
 6. Back in your *Widget HTML Editor*: *Select All* and *Paste*.
 7. Change to the *Script Editor* tab.
 8. In a new browser window:
-    1. Go to https://github.com/Sydney-Informatics-Hub/labarchives-stoichiometry-widget/raw/master/script.js
+    1. Go to https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/script.js
     2. *Select All* (find this in the Edit menu)
     3. *Copy* (find this in the edit menu)
     4. Close that browser window.
 9. Back in your *Script Editor*: *Select All* and *Paste*
 10. Click the *Save Widget* button next to the Title entry box.
 
-## Add a Widget into your Notebook
+## Use the Widget into your Notebook
 
+Click to insert a widget (may be under the "More" menu).
+Select the Widget you've created, and click "Use Stoich Table" or whatever you called it.
 See https://labarchives.kayako.com/knowledgebase/article/View/408/286/501-what-are-widgets
 
 ## Expected Behaviour

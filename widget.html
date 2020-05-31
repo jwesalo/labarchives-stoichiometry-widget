@@ -9,14 +9,14 @@ input:enabled {
 input:disabled {
     background: #dddddd;
 }
-input.substance { width: 35ex }
+input.substance { width: 40ex }
 input.amount { width: 8ex }
 input.fw { width: 8ex }
 input.moles { width: 8ex }
-input.equivalents { width: 5ex }
+input.equivalents { width: 7ex }
 input.volume { width: 8ex }
-input.density { width: 5ex }
-input.comments { width: 35ex }
+input.density { width: 7ex }
+input.comments { width: 30ex }
 
 .widgetcredit {
 	font-size: small;
@@ -39,119 +39,129 @@ input.comments { width: 35ex }
 }
 </style>
 <table id="T01">
-    <thead>
-    <tr>
-        <th scope="col"><strong>Substance</strong></th>
-        <th scope="col"><strong>Amount<br />(mg)</strong></th>
-        <th scope="col"><strong>FW<br />(g/mol)</strong></th>
-        <th scope="col"><strong>Moles<br />(mmol)</strong></th>
-        <th scope="col"><strong>Equiv.</strong></th>
-        <th scope="col"><strong>Volume<br />(uL)</strong></th>
-        <th scope="col"><strong>Density<br />(g/mL)</strong></th>
-        <th scope="col"><strong>Comments</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="initialRow">
-        <td><input maxlength="30" class="substance" name="substance1" /></td>
-        <td><input class="amount" name="amount1" type="number" /></td>
-        <td><input class="fw" name="fw1" type="number" /></td>
-        <td><input class="moles" name="moles1" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents1" type="number" value="1" /></td>
-        <td><input class="volume" name="volume1" type="number" /></td>
-        <td><input class="density" name="density1" type="number" /></td>
-        <td><input maxlength="100" class="comments" name="comments1" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance2" /></td>
-        <td><input disabled="disabled" class="amount" name="amount2" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw2" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles2" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents2" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume2" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density2" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments2" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance3" /></td>
-        <td><input disabled="disabled" class="amount" name="amount3" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw3" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles3" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents3" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume3" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density3" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments3" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance4" /></td>
-        <td><input disabled="disabled" class="amount" name="amount4" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw4" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles4" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents4" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume4" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density4" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments4" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance5" /></td>
-        <td><input disabled="disabled" class="amount" name="amount5" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw5" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles5" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents5" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume5" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density5" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments5" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance6" /></td>
-        <td><input disabled="disabled" class="amount" name="amount6" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw6" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles6" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents6" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume6" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density6" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments6" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance7" /></td>
-        <td><input disabled="disabled" class="amount" name="amount7" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw7" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles7" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents7" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume7" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density7" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments7" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance8" /></td>
-        <td><input disabled="disabled" class="amount" name="amount8" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw8" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles8" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents8" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume8" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density8" type="number" /></td>
-        <td><input disabled="disabled" maxlength="70" class="comments" name="comments8" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance9" /></td>
-        <td><input disabled="disabled" class="amount" name="amount9" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw9" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles9" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents9" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume9" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density9" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments9" /></td>
-    </tr>
-    <tr>
-        <td><input disabled="disabled" maxlength="30" class="substance" name="substance10" /></td>
-        <td><input disabled="disabled" class="amount" name="amount10" type="number" /></td>
-        <td><input disabled="disabled" class="fw" name="fw10" type="number" /></td>
-        <td><input disabled="disabled" class="moles" name="moles10" type="number" /></td>
-        <td><input disabled="disabled" class="equivalents" name="equivalents10" type="number" /></td>
-        <td><input disabled="disabled" class="volume" name="volume10" type="number" /></td>
-        <td><input disabled="disabled" class="density" name="density10" type="number" /></td>
-        <td><input disabled="disabled" maxlength="100" class="comments" name="comments10" /></td>
-    </tr>
-    </tbody>
+	<thead><script src="/home/bandrews/Desktop/labarchives-stoichiometry-widget-master"></script>
+		<tr>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>substance</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>amount<br />
+			(mg)</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>FW<br />
+			(g/mol)</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>moles<br />
+			(mmol)</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>equiv.</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>volume<br />
+			(&micro;L)</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>density<br />
+			(g/mL)</strong></span></span></th>
+			<th scope="col"><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>comments</strong></span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="initialRow">
+			<td><input class="substance" maxlength="120" name="substance1" /></td>
+			<td><input class="amount" name="amount1" type="number" /></td>
+			<td><input class="fw" name="fw1" type="number" /></td>
+			<td><input class="moles" name="moles1" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents1" type="number" value="1" /></td>
+			<td><input class="volume" name="volume1" type="number" /></td>
+			<td><input class="density" name="density1" type="number" /></td>
+			<td><input class="comments" maxlength="100" name="comments1" /><span style="font-family:arial,helvetica,sans-serif;">&nbsp;Locked:</span>&nbsp;<input id="initialfixed" name="initialfixed" type="checkbox" value="checked" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance2" /></td>
+			<td><input class="amount" disabled="disabled" name="amount2" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw2" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles2" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents2" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume2" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density2" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments2" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance3" /></td>
+			<td><input class="amount" disabled="disabled" name="amount3" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw3" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles3" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents3" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume3" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density3" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments3" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance4" /></td>
+			<td><input class="amount" disabled="disabled" name="amount4" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw4" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles4" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents4" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume4" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density4" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments4" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance5" /></td>
+			<td><input class="amount" disabled="disabled" name="amount5" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw5" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles5" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents5" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume5" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density5" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments5" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance6" /></td>
+			<td><input class="amount" disabled="disabled" name="amount6" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw6" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles6" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents6" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume6" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density6" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments6" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance7" /></td>
+			<td><input class="amount" disabled="disabled" name="amount7" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw7" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles7" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents7" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume7" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density7" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments7" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance8" /></td>
+			<td><input class="amount" disabled="disabled" name="amount8" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw8" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles8" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents8" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume8" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density8" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="70" name="comments8" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance9" /></td>
+			<td><input class="amount" disabled="disabled" name="amount9" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw9" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles9" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents9" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume9" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density9" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments9" /></td>
+		</tr>
+		<tr>
+			<td><input class="substance" disabled="disabled" maxlength="120" name="substance10" /></td>
+			<td><input class="amount" disabled="disabled" name="amount10" type="number" /></td>
+			<td><input class="fw" disabled="disabled" name="fw10" type="number" /></td>
+			<td><input class="moles" disabled="disabled" name="moles10" type="number" /></td>
+			<td><input class="equivalents" disabled="disabled" name="equivalents10" type="number" /></td>
+			<td><input class="volume" disabled="disabled" name="volume10" type="number" /></td>
+			<td><input class="density" disabled="disabled" name="density10" type="number" /></td>
+			<td><input class="comments" disabled="disabled" maxlength="100" name="comments10" /></td>
+		</tr>
+	</tbody>
 </table>
-<div class="widgetcredit">Stoichiometry widget by the <a href="https://sydney.edu.au/research/facilities/sydney-informatics-hub.html" title="Sydney Informatics Hub">Sydney Informatics Hub</a> at the University of Sydney</div>
+
+<div class="widgetcredit"><span style="font-size:11px;"><span style="font-family:arial,helvetica,sans-serif;">Stoichiometry widget adapted by Bryan Andrews and Joshua&nbsp;Wesalo from the original by the <a href="https://sydney.edu.au/research/facilities/sydney-informatics-hub.html" title="Sydney Informatics Hub">Sydney Informatics Hub</a> at the University of Sydney.</span></span></div>
+<style type="text/css">table {
+    border-collapse: collapse;
+}
+</style>

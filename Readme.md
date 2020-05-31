@@ -1,6 +1,6 @@
 
 # LabArchives "Stoichmeister" Stoichiometry Table Widget
-
+![Aspirin](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/aspirin.png)
 This widget calculates and documents amounts, moles, volumes, and stoichiometric equivalents for chemical reactions.
 
 The widget can be added to a LabArchives Notebook page.
@@ -24,7 +24,7 @@ Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from 
 To install, you will need to copy the contents from the raw versions of [`widget.html`](widget.html) and [`script.js`](script.js) into the [Widget Manager](https://labarchives.kayako.com/Knowledgebase/Article/View/409/0/5031-the-widget-manager).
 
 1. Go to the *Widget Manager*
-![Widget Manager](https://imgur.com/oRDvnoz)
+![Widget Manager](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/Widget_manager.png)
 2. Under *Available Widgets* click *New*
 3. Enter the widget title: *Stoichiomeister* (or *Stoich Table*, or whatever you choose to call it for your notebooks)
 4. In the *Widget HTML Editor* tab, click the *Source* button on the toolbar.
@@ -33,26 +33,22 @@ To install, you will need to copy the contents from the raw versions of [`widget
     2. *Select All*
     3. *Copy*
 6. Back in your *Widget HTML Editor*: *Select All* and *Paste*.
-![HTML]
-(https://imgur.com/5Vv1Y6N)
+![HTML](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/HTML.png)
 7. Change to the *Script Editor* tab.
 8. In a new browser window:
     1. Go to https://github.com/jwesalo/labarchives-stoichiometry-widget/raw/master/script.js
     2. *Select All*
     3. *Copy*
 9. Back in your *Script Editor*: *Select All* and *Paste*
-![JS]
-(https://imgur.com/cj6KLOi)
+![JS](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/JS.png
 10. Click the *Save Widget* button next to the Title entry box.
 
 ## Insert the widget into a page of your notebook
 
 Click to insert a widget (may be under the "More" menu).
-![insert]
-(https://imgur.com/KTkfwxC)
+![insert](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/insert.png)
 Select the Widget you've created, and click "Use Stoich Table" or whatever you called it.
-![select]
-(https://imgur.com/ozghnaW)
+![select](https://github.com/jwesalo/labarchives-stoichiometry-widget/blob/images/insert2.png)
 
 See https://labarchives.kayako.com/knowledgebase/article/View/408/286/501-what-are-widgets
 

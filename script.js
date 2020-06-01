@@ -1,12 +1,16 @@
 /* Stoichiometry Table Widget for LabArchives eNotebook
 
-Implemented by Joel Nothman and Vijay Raghunath at the Sydney Informatics Hub.
+Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from the original developed
+by the Sydney Informatics Hub from an initial version by Dr. Samuel Banister.
+This work was completed to build a customized widget for the Deiters Lab (http://deiterslab.org).
+This work was supported by the US National Institutes of Health (R01GM112728)
 
+The original code was implemented by Joel Nothman and Vijay Raghunath at the Sydney Informatics Hub.
 Please acknowledge our contribution to your work where appropriate:
 "This research was supported by the Sydney Informatics Hub, funded by the University of Sydney."
-
 Copyright (c) 2018-2020, The University of Sydney
 All rights reserved.
+
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:

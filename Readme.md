@@ -17,7 +17,7 @@ The following changes have been made from the original:
  - Adjusted column widths (main goal was to ensure that the equiv. column shows 2 decimal places for % yield calculations and for catalysts) 
  - Increased maximum length of substance names to 120 characters.
 
-Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from the original developed by the [Sydney Informatics Hub](https://informatics.sydney.edu.au) from an initial version by [Dr. Samuel Banister](https://sydney.edu.au/science/people/samuel.banister.php). This work was completed to build a customized widget for the Deiters Lab (http://deiterslab.org). 
+Bryan Andrews and Joshua Wesalo (University of Pittsburgh) forked the code from the original developed by the [Sydney Informatics Hub](https://informatics.sydney.edu.au) from an initial version by [Dr. Samuel Banister](https://sydney.edu.au/science/people/samuel.banister.php). This work was completed to build a customized widget for the Deiters Lab (http://deiterslab.org). This work was supported by the US National Institutes of Health (R01GM112728).
 
 ## How to use the widget in your notebook
 
